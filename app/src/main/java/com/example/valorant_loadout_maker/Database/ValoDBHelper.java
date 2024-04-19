@@ -12,7 +12,7 @@ import java.util.List;
 
 public class ValoDBHelper extends SQLiteOpenHelper {
     private static final int VERSION = 1;
-    private static final String DATABASE_NAME = "valo.db"
+    private static final String DATABASE_NAME = "valo.db";
     private SQLiteDatabase db;
 
     public ValoDBHelper(Context context){

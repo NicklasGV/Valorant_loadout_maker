@@ -61,7 +61,6 @@ public class ValoAdapter extends RecyclerView.Adapter<ValoAdapter.ViewHolder> {
     public void editLoadout(int position){
         LoadoutModel item = loadoutList.get(position);
         Bundle bundle = new Bundle();
-        bundle.putInt("id", item.getId());
         bundle.putString("loadout_name", item.getLoadout_name());
         AddNewLoadout fragment = new AddNewLoadout();
         fragment.setArguments(bundle);

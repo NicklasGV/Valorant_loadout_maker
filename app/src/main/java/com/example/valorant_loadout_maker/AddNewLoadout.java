@@ -96,7 +96,7 @@ public class AddNewLoadout extends BottomSheetDialogFragment{
             String text = newTaskText.getText().toString();
             // Here we check for if updating, so either we update or create new
             if (finalIsUpdate) {
-                db.updateLoadout(bundle.getInt("id"), text);
+                db.editLoadout(bundle.getInt("id"), text);
             } else {
                 LoadoutModel loadout = new LoadoutModel();
                 loadout.setLoadout_name(text);
